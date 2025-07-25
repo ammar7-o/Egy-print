@@ -1,0 +1,27 @@
+/* Import specified Arabic & English fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cairo&family=Alexandria&family=Changa&family=Mada&family=Readex+Pro&family=Reem+Kufi&family=Rakkas&family=Kufam&family=Tagwal&family=Lalezar&family=Fustat&family=Cascadia+Code&family=Cascadia+Mono&family=Lemonada&family=Alkalami&family=Handjet&family=Marhey&display=swap');
+
+/* -------------------------
+   Arabic & English Fonts 
+-------------------------- */
+.font-cairo          { font-family: 'Cairo', sans-serif; }          /* Arabic & Latin */
+.font-alexandria     { font-family: 'Alexandria', serif; }          /* Arabic & Latin */
+.font-changa         { font-family: 'Changa', sans-serif; }         /* Arabic & Latin */
+.font-tagwal         { font-family: 'Tagwal', sans-serif; }         /* Arabic & Latin */
+.font-readex-pro     { font-family: 'Readex Pro', sans-serif; }     /* Arabic & Latin */
+.font-mada           { font-family: 'Mada', sans-serif; }           /* Arabic & Latin */
+.font-reem-kufi      { font-family: 'Reem Kufi', sans-serif; }      /* Arabic & Latin */
+.font-lalezar        { font-family: 'Lalezar', cursive; }           /* Arabic & Latin */
+.font-fustat         { font-family: 'Fustat', serif; }              /* Arabic & Latin */
+.font-rakkas         { font-family: 'Rakkas', cursive; }            /* Arabic & Latin */
+.font-kufam          { font-family: 'Kufam', cursive; }             /* Arabic & Latin */
+.font-alkalami       { font-family: 'Alkalami', serif; }            /* Arabic & Latin */
+.font-handjet        { font-family: 'Handjet', cursive; }           /* Arabic & Latin */
+.font-marhey         { font-family: 'Marhey', cursive; }            /* Arabic & Latin */
+
+/* -------------------------
+          English-only Fonts
+-------------------------- */
+.font-cascadia-code  { font-family: 'Cascadia Code', monospace; }   /* English only - monospace */
+.font-cascadia-mono  { font-family: 'Cascadia Mono', monospace; }   /* English only - monospace */
+.font-lemonada       { font-family: 'Lemonada', cursive, sans-serif; } /* English only - cursive */

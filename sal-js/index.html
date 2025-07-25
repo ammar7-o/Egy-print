@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Sal.js </title>
+  <link rel="stylesheet" href="sal.css" />
+  <style>
+    body {
+      height: 300vh;
+      font-family: Arial, sans-serif;
+      padding: 2rem;
+      background: #f9fafb;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    .card {
+      background-color: #2563eb;
+      color: white;
+      border-radius: 12px;
+      padding: 1.5rem;
+      font-size: 1.2rem;
+      text-align: center;
+      box-shadow: 0 8px 16px rgb(37 99 235 / 0.4);
+    }
+
+    .card small {
+      display: block;
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      color: #d1d5db;
+      font-weight: 300;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1 style="text-align:center; margin-bottom: 2rem;">Sal.js</h1>
+
+  <div class="container">
+
+    <div class="card" data-sal="fade" data-sal-duration="600" data-sal-delay="0" data-sal-easing="ease">
+      Fade<br />
+      <small>data-sal="fade" duration=600 delay=0 easing="ease"</small>
+    </div>
+
+    <div class="card" data-sal="fade-up" data-sal-duration="600" data-sal-delay="100" data-sal-easing="ease-out-cubic">
+      Fade Up<br />
+      <small>data-sal="fade-up" duration=600 delay=100 easing="ease-out-cubic"</small>
+    </div>
+
+    <div class="card" data-sal="fade-down" data-sal-duration="700" data-sal-delay="200" data-sal-easing="ease-in-out-cubic">
+      Fade Down<br />
+      <small>data-sal="fade-down" duration=700 delay=200 easing="ease-in-out-cubic"</small>
+    </div>
+
+    <div class="card" data-sal="fade-left" data-sal-duration="700" data-sal-delay="300" data-sal-easing="ease-out-back">
+      Fade Left<br />
+      <small>data-sal="fade-left" duration=700 delay=300 easing="ease-out-back"</small>
+    </div>
+
+    <div class="card" data-sal="fade-right" data-sal-duration="700" data-sal-delay="400" data-sal-easing="ease-out-back">
+      Fade Right<br />
+      <small>data-sal="fade-right" duration=700 delay=400 easing="ease-out-back"</small>
+    </div>
+
+    <div class="card" data-sal="slide-up" data-sal-duration="800" data-sal-delay="100" data-sal-easing="ease-out-cubic">
+      Slide Up<br />
+      <small>data-sal="slide-up" duration=800 delay=100 easing="ease-out-cubic"</small>
+    </div>
+
+    <div class="card" data-sal="slide-down" data-sal-duration="800" data-sal-delay="150" data-sal-easing="ease-in-out-cubic">
+      Slide Down<br />
+      <small>data-sal="slide-down" duration=800 delay=150 easing="ease-in-out-cubic"</small>
+    </div>
+
+    <div class="card" data-sal="slide-left" data-sal-duration="900" data-sal-delay="200" data-sal-easing="ease-out-back">
+      Slide Left<br />
+      <small>data-sal="slide-left" duration=900 delay=200 easing="ease-out-back"</small>
+    </div>
+
+    <div class="card" data-sal="slide-right" data-sal-duration="900" data-sal-delay="250" data-sal-easing="ease-out-back">
+      Slide Right<br />
+      <small>data-sal="slide-right" duration=900 delay=250 easing="ease-out-back"</small>
+    </div>
+
+    <div class="card" data-sal="zoom-in" data-sal-duration="700" data-sal-delay="300" data-sal-easing="ease-in-out-cubic">
+      Zoom In<br />
+      <small>data-sal="zoom-in" duration=700 delay=300 easing="ease-in-out-cubic"</small>
+    </div>
+
+    <div class="card" data-sal="zoom-out" data-sal-duration="700" data-sal-delay="350" data-sal-easing="ease-in-out-cubic">
+      Zoom Out<br />
+      <small>data-sal="zoom-out" duration=700 delay=350 easing="ease-in-out-cubic"</small>
+    </div>
+
+  </div>
+
+  <script src="sal.js"></script>
+  <script>
+    sal({
+      threshold: 1,
+      once: false,
+      easing: 'ease-out-cubic',
+    });
+  </script>
+
+</body>
+
+</html>

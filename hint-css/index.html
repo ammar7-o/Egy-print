@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Hint.css All Tooltip Examples</title>
+    <link rel="stylesheet" href="hint.min.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: #f9f9f9;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 30px;
+        }
+
+        .demo-section {
+            margin-bottom: 40px;
+        }
+
+        .hint-button {
+            margin: 10px;
+            padding: 15px 25px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            background: #3498db;
+            color: white;
+            border-radius: 6px;
+        }
+
+        .hint-button:hover {
+            background: #2980b9;
+        }
+
+        /* For multiple styles demo */
+        .hint--error {
+            background-color: #e74c3c !important;
+        }
+
+        .hint--info {
+            background-color: #3498db !important;
+        }
+
+        .hint--warning {
+            background-color: #f39c12 !important;
+        }
+
+        .hint--success {
+            background-color: #2ecc71 !important;
+        }
+    </style>
+    <!-- <style>
+    .hint-button {
+  /* fallback default colors */
+  --hint-background: #333;
+  --hint-color: #fff;
+}
+
+.hint-button::before,
+.hint-button::after {
+  background: var(--hint-background) !important;
+  color: var(--hint-color) !important;
+}
+foor costume color hint
+  </style> -->
+</head>
+
+<body>
+
+    <h1>Hint.css Tooltip Examples</h1>
+
+    <div class="demo-section">
+        <h2>Tooltip Directions</h2>
+        <button class="hint-button hint--top" aria-label="Tooltip on top">Top</button>
+        <button class="hint-button hint--bottom" aria-label="Tooltip on bottom">Bottom</button>
+        <button class="hint-button hint--left" aria-label="Tooltip on left">Left</button>
+        <button class="hint-button hint--right" aria-label="Tooltip on right">Right</button>
+        <button class="hint-button hint--top-left" aria-label="Tooltip on top left">Top Left</button>
+        <button class="hint-button hint--top-right" aria-label="Tooltip on top right">Top Right</button>
+        <button class="hint-button hint--bottom-left" aria-label="Tooltip on bottom left">Bottom Left</button>
+        <button class="hint-button hint--bottom-right" aria-label="Tooltip on bottom right">Bottom Right</button>
+    </div>
+
+    <div class="demo-section">
+        <h2>Tooltip Styles</h2>
+        <button class="hint-button hint--top hint--error" aria-label="Error message tooltip">Error</button>
+        <button class="hint-button hint--top hint--info" aria-label="Information tooltip">Info</button>
+        <button class="hint-button hint--top hint--warning" aria-label="Warning tooltip">Warning</button>
+        <button class="hint-button hint--top hint--success" aria-label="Success tooltip">Success</button>
+    </div>
+
+    <div class="demo-section">
+        <h2>Tooltip with Rounded Corners and Animations</h2>
+        <button class="hint-button hint--top hint--rounded" aria-label="Rounded tooltip">Rounded</button>
+        <button class="hint-button hint--top hint--bounce" aria-label="Bounce animation tooltip">Bounce</button>
+        <button class="hint-button hint--top hint--jello" aria-label="Jello animation tooltip">Jello</button>
+        <button class="hint-button hint--top hint--pulse" aria-label="Pulse animation tooltip">Pulse</button>
+        <button class="hint-button hint--top hint--zoom" aria-label="Zoom animation tooltip">Zoom</button>
+        <button class="hint-button hint--top hint--shake" aria-label="Shake animation tooltip">Shake</button>
+    </div>
+
+    <div class="demo-section">
+        <h2>Tooltip with Custom Colors</h2>
+        <button class="hint-button hint--top" aria-label="Custom color tooltip"
+            style="--hint-background: #8e44ad; --hint-color: #fff;">Custom Purple</button>
+        <button class="hint-button hint--top" aria-label="Custom color tooltip"
+            style="--hint-background: #27ae60; --hint-color: #fff;">Custom Green</button>
+        <button class="hint-button hint--top" aria-label="Custom color tooltip"
+            style="--hint-background: #e67e22; --hint-color: #fff;">Custom Orange</button>
+    </div>
+
+</body>
+
+</html>

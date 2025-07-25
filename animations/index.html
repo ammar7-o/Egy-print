@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WOW Animation Cards</title>
+
+  <!-- Local Animate.css (v3.x) -->
+  <link rel="stylesheet" href="animate.css" />
+
+  <!-- Local WOW.js -->
+  <script src="wow.min.js"></script> 
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #121212;
+      color: white;
+      padding: 40px 20px;
+    }
+
+    h1, h2, h3 {
+      text-align: center;
+      color: #fff;
+    }
+
+    .category {
+      margin-bottom: 50px;
+    }
+
+    .category h2 {
+      border-bottom: 2px solid #333;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .card {
+      background-color: #1e1e1e;
+      border: 1px solid #333;
+      border-radius: 10px;
+      width: 200px;
+      height: 120px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 15px;
+      font-size: 1rem;
+      color: #fff;
+      transition: transform 0.3s ease, border-color 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      border-color: #666;
+    }
+  </style>
+</head>
+<body>
+  <h1>🌌 WOW.js + Animate.css (v3) - Cards Demo</h1>
+  <h3>Use HTML attributes like: <code>data-wow-duration</code>, <code>data-wow-delay</code>, etc.</h3>
+
+  <div id="container">
+    <!-- Fading Effects -->
+    <div class="category">
+      <h2>Fading</h2>
+      <div class="cards">
+        <div class="card wow fadeIn" data-wow-duration="1s">fadeIn</div>
+        <div class="card wow fadeInDown" data-wow-duration="1s">fadeInDown</div>
+        <div class="card wow fadeInLeft" data-wow-duration="1s">fadeInLeft</div>
+        <div class="card wow fadeInRight" data-wow-duration="1s">fadeInRight</div>
+        <div class="card wow fadeInUp" data-wow-duration="1s">fadeInUp</div>
+      </div>
+    </div>
+
+    <!-- Bouncing Effects -->
+    <div class="category">
+      <h2>Bouncing</h2>
+      <div class="cards">
+        <div class="card wow bounce" data-wow-duration="1s">bounce</div>
+        <div class="card wow bounceIn" data-wow-duration="1s">bounceIn</div>
+        <div class="card wow bounceInDown" data-wow-duration="1s">bounceInDown</div>
+        <div class="card wow bounceInLeft" data-wow-duration="1s">bounceInLeft</div>
+        <div class="card wow bounceInRight" data-wow-duration="1s">bounceInRight</div>
+        <div class="card wow bounceInUp" data-wow-duration="1s">bounceInUp</div>
+      </div>
+    </div>
+
+    <!-- Sliding Effects -->
+    <div class="category">
+      <h2>Sliding</h2>
+      <div class="cards">
+        <div class="card wow slideInUp" data-wow-duration="1s">slideInUp</div>
+        <div class="card wow slideInDown" data-wow-duration="1s">slideInDown</div>
+        <div class="card wow slideInLeft" data-wow-duration="1s">slideInLeft</div>
+        <div class="card wow slideInRight" data-wow-duration="1s">slideInRight</div>
+      </div>
+    </div>
+
+    <!-- Zooming Effects -->
+    <div class="category">
+      <h2>Zooming</h2>
+      <div class="cards">
+        <div class="card wow zoomIn" data-wow-duration="1s">zoomIn</div>
+        <div class="card wow zoomInDown" data-wow-duration="1s">zoomInDown</div>
+        <div class="card wow zoomInLeft" data-wow-duration="1s">zoomInLeft</div>
+        <div class="card wow zoomInRight" data-wow-duration="1s">zoomInRight</div>
+        <div class="card wow zoomInUp" data-wow-duration="1s">zoomInUp</div>
+      </div>
+    </div>
+
+    <!-- Flipping Effects -->
+    <div class="category">
+      <h2>Flipping</h2>
+      <div class="cards">
+        <div class="card wow flip" data-wow-duration="1s">flip</div>
+        <div class="card wow flipInX" data-wow-duration="1s">flipInX</div>
+        <div class="card wow flipInY" data-wow-duration="1s">flipInY</div>
+      </div>
+    </div>
+
+    <!-- Rotating Effects -->
+    <div class="category">
+      <h2>Rotating</h2>
+      <div class="cards">
+        <div class="card wow rotateIn" data-wow-duration="1s">rotateIn</div>
+        <div class="card wow rotateInDownLeft" data-wow-duration="1s">rotateInDownLeft</div>
+        <div class="card wow rotateInDownRight" data-wow-duration="1s">rotateInDownRight</div>
+        <div class="card wow rotateInUpLeft" data-wow-duration="1s">rotateInUpLeft</div>
+        <div class="card wow rotateInUpRight" data-wow-duration="1s">rotateInUpRight</div>
+      </div>
+    </div>
+
+    <!-- Special Effects -->
+    <div class="category">
+      <h2>Special</h2>
+      <div class="cards">
+        <div class="card wow tada" data-wow-duration="1s">tada</div>
+        <div class="card wow heartBeat" data-wow-duration="1s">heartBeat</div>
+        <div class="card wow jello" data-wow-duration="1s">jello</div>
+        <div class="card wow swing" data-wow-duration="1s">swing</div>
+        <div class="card wow wobble" data-wow-duration="1s">wobble</div>
+        <div class="card wow rubberBand" data-wow-duration="1s">rubberBand</div>
+        <div class="card wow lightSpeedInLeft" data-wow-duration="1s">lightSpeedInLeft</div>
+        <div class="card wow lightSpeedInRight" data-wow-duration="1s">lightSpeedInRight</div>
+      </div>
+    </div>
+  </div>
+  
+
+  <script>
+    new WOW().init();
+  </script>
+</body>
+</html>
