@@ -6,18 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Egy-print</title>
     <link rel="icon" href="media/logo.png">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/index.css">
     <link rel="stylesheet" href="hint-css/hint.min.css">
     <link rel="stylesheet" href="font-awesome/css/all.min.css">
     <link rel="stylesheet" href="sal-js/sal.css">
     <link rel="stylesheet" href="animations/animate.css">
     <link rel="stylesheet" href="fonts/fonts.css">
 
+
 </head>
 
 <body class="font-alexandria ">
     <header>
-        <a class="header-logo" href="media/logo.png"><img src="media/logo.png" alt="logo"></a>
+        <a class="header-logo" href=""><img src="media/logo.png" alt="logo"></a>
         <nav>
             <ul>
                 <li><a href="">Home</a></li>
@@ -27,11 +28,23 @@
             </ul>
         </nav>
         <button> Contact</button>
+        <i id="menu" class="fas fa-bars"></i>
+        <div id="nav-phone">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Products</a></li>
+            </ul>
+            </nav>
+            <button> Contact</button>
+        </div>
     </header>
     <section id="section-1">
         <span data-wow-duration="2s" class="wow fadeInUp" data-wow-duration="1s" id="title">Egy print</span>
-        <h1 data-wow-duration="2s" class="wow fadeInUp">for digital printing</h1>
-        <h3 data-wow-duration="2s" class="wow fadeInUp">We are a company specialized in high-quality digital printing
+        <h1 data-wow-duration="2s" class="wow fadeInUp text-3xl">for digital printing</h1>
+        <h3 id="egy-us" data-wow-duration="2s" class="wow fadeInUp">We are a company specialized in high-quality digital
+            printing
             solutions.
             From business cards and brochures to banners and large-scale prints, Egy Print provides reliable and
             cost-effective services.
@@ -53,6 +66,10 @@
             <img data-wow-delay="0.6s" data-wow-duration="2s" class=" wow bounceInLeft"
                 src="media/flex-printer-high-quality-.png" alt="">
         </div>
+    </section>
+    <section id="section-2">
+        <h1 class="text-3xl text-center ">About Us</h1>
+<h2 class="text-2xl text-center text-red-500">cooming soon</h2>
     </section>
 
 
@@ -95,5 +112,6 @@
         easing: 'ease-out-cubic',
     });
 </script>
+<script src="tailwind/tailwind.js"></script>
 
 </html>
