@@ -9,9 +9,10 @@
     <link rel="stylesheet" href="style/index.css">
     <link rel="stylesheet" href="hint-css/hint.min.css">
     <link rel="stylesheet" href="font-awesome/css/all.min.css">
-    <link rel="stylesheet" href="sal-js/sal.css">
+  
     <link rel="stylesheet" href="animations/animate.css">
     <link rel="stylesheet" href="fonts/fonts.css">
+      <link rel="stylesheet" href="sal-js/sal.css">
 
 
 </head>
@@ -22,7 +23,7 @@
         <nav>
             <ul>
                 <li><a href="">Home</a></li>
-                <li><a href="">About Us</a></li>
+                <li><a href="#aboutus">About Us</a></li>
                 <li><a href="">Services</a></li>
                 <li><a href="">Products</a></li>
             </ul>
@@ -52,9 +53,10 @@
 
         </h3>
         <div id="header-icons">
-            <div class="item wow pulse"><i class="fa-brands fa-whatsapp"></i></div>
-            <div class="item wow pulse"><i class="fa-solid fa-phone"></i></div>
-            <div class="item wow pulse"><i class="fa-solid fa-envelope"></i></div>
+            <a href="https://wa.me/0665904376" target="_blank" class="item wow pulse"><i class="fa-brands fa-whatsapp"></i></a>
+              <a href="https://wa.me/PHONE_NUMBER" target="_blank" class="item wow pulse"><i class="fa-solid fa-phone"></i></a>
+                <a href="https://wa.me/PHONE_NUMBER" target="_blank" class="item wow pulse"><i class="fa-solid fa-envelope"></i></a>
+
         </div>
         <div id="layer"></div>
         <div id="right">
@@ -67,11 +69,39 @@
                 src="media/flex-printer-high-quality-.png" alt="">
         </div>
     </section>
+
+
+
     <section id="section-2">
-        <h1 class="text-3xl text-center ">About Us</h1>
-<h2 class="text-2xl text-center text-red-500">cooming soon</h2>
+        <h1 id="aboutus" class="text-3xl text-center title ">About Us</h1>
+        <div data-sal="slide-up" data-sal-duration="800" data-sal-delay="100" data-sal-easing="ease-out-cubic" id="about-container">
+            <div id="about-logo"><img src="media/logo.png" alt="logo"></div>
+            <div id="about-content">
+                <h1  data-wow-duration="2s"  data-wow-duration="1s" class="wow fadeInUp text-3xl text-center name ">Egy print</h1>
+                <h2 class="content"><span>Egy Print</span> is your trusted partner in <span>high-quality digital
+                        printing </span>solutions. We specialize in
+                    delivering precision and creativity across every project — from <span>business cards</span> and
+                    brochures to
+                    <span>banners</span> and <span>large-format </span>prints.
+
+                    With a commitment to reliability, <span>quality</span>, and affordability, we help businesses and
+                    individuals
+                    bring their <span>ideas</span> to life through print. At Egy Print, your vision becomes a reality —
+                    beautifully,
+                    <span>professionally</span>, and <span>on time.</span>
+                </h2>
+            </div>
+        </div>
     </section>
 
+
+
+
+
+    <section id="section-3">
+   <h1 id="aboutus" class="text-3xl text-center title ">Services</h1>
+
+    </section>
 
 
 
@@ -95,7 +125,14 @@
 
 </body>
 
-
+<script src="sal-js/sal.js"></script>
+  <script>
+    sal({
+      threshold: 0.5,
+      once: false,
+      easing: 'ease-out-cubic',
+    });
+  </script>
 
 
 
@@ -104,14 +141,7 @@
 <script>
     new WOW().init();
 </script>
-<script src="/sal-js/sal.js"></script>
-<script>
-    sal({
-        threshold: 1,
-        once: false,
-        easing: 'ease-out-cubic',
-    });
-</script>
+
 <script src="tailwind/tailwind.js"></script>
 
 </html>
