@@ -1,12 +1,14 @@
 #section-3 {
     width: 100%;
-    height: 100vh;
+     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #202020;
+    padding: 20px;
 }
+
 #section-3 .title {
     margin: 10px;
     margin-bottom: 20px;
@@ -26,4 +28,104 @@
 
     transition: width 0.3s ease;
 
+}
+
+#card-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#card-container .card {
+    width: 46%;
+    height: 60vh;
+    background-color: rgb(0, 0, 0);
+    margin: 10px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s;
+    position: relative;
+    box-shadow: white 2px -3px 10px;
+}
+
+#card-container .card .img-wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+#card-container .card img {
+    object-fit: cover;
+    top: 0;
+    overflow: hidden;
+    right: 0;
+    width: 100%;
+    height: 200px;
+    transition: 0.3s ease;
+}
+
+#card-container .card .logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    background-image: linear-gradient(to top, blue, red);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#card-container .card .logo i {
+    font-size: 27px;
+    color: white;
+}
+
+#card-container .card:hover img {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+#card-container .card .content {
+    width: 100%;
+    height: 100%;
+    padding: 7px 25px;
+    z-index: 200;
+    color: white;
+
+
+}
+
+#card-container .card h1 {
+    font-size: 22px;
+}
+
+#card-container .card h2 {
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+#card-container .card ul {
+    list-style: disc;
+    color: rgb(255, 255, 255);
+    /* text color */
+    padding-left: 15px;
+    /* space for marker */
+}
+
+#card-container .card ul li::marker {
+    color: red;
+    /* marker (bullet) color */
+}
+
+@media (max-width: 700px) {
+ 
+
+    #card-container .card {
+        width: 87%;
+    }
 }

@@ -23,13 +23,35 @@ header {
 }
 
 .header-logo {
-    width: 50px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    font-weight: bold;
 }
 
 .header-logo img {
     width: 30px;
     margin: 10px;
     margin-left: 30px;
+
+}
+
+#glass {
+    padding: 10px;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.11);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+#glass i {
+    font-size: 17px;
+    color: yellow;
+    margin: 5px;
 }
 
 nav ul {
@@ -93,19 +115,10 @@ header button:hover {
 
 
 #title {
-    font-size: 130px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 20px;
-
+    font-size: 65px;
+    margin: 10px;
     text-align: center;
 
-    background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(212, 212, 212));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
 }
 
 #section-1 {
@@ -130,9 +143,10 @@ header button:hover {
 }
 
 #egy-us {
-    width: 600px;
+    width: 650px;
     margin-top: 10px;
     text-wrap: wrap;
+    font-size: 20px;
 }
 
 #header-icons {
@@ -199,10 +213,10 @@ header button:hover {
     height: 100%;
     z-index: 1;
 
-    background: linear-gradient(-45deg, #ff0047, #00cfff, #f5ff00, #8e2de2);
+    /* background: linear-gradient(-45deg, #ff0047, #00cfff, #f5ff00, #8e2de2);
     background-size: 400% 400%;
     animation: gradientBG 15s ease infinite;
-    opacity: 0.2;
+    opacity: 0.2; */
     /* اجعلها خفيفة حتى لا تزعج المحتوى */
 }
 
@@ -262,7 +276,7 @@ header button:hover {
     display: none;
     position: absolute;
     right: -100%;
-    top: 100px;
+    top: 70px;
     z-index: 600;
     text-align: center;
     transition: 0.5s;
@@ -270,7 +284,7 @@ header button:hover {
 
 #nav-phone.active {
     right: 0px;
-    top: 100px;
+    top: 70px;
 
 }
 
@@ -296,6 +310,8 @@ header button:hover {
         flex-wrap: wrap;
     }
 
+   
+
     #section-1 {
         height: calc(100vh - 70px);
     }
@@ -316,7 +332,9 @@ header button:hover {
         display: none;
     }
 
-
+ #glass {
+        font-size: 14px;
+    }
 
     #nav-phone {
         display: flex;
@@ -326,7 +344,7 @@ header button:hover {
     }
 
     #title {
-        font-size: 90px;
+        font-size: 45px;
     }
 
     #left,
@@ -336,7 +354,8 @@ header button:hover {
 
     #egy-us {
         width: 370px;
-        margin: 20px;
+        margin: 10px;
+        font-size: 16px;
     }
 }
 
