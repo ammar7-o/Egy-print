@@ -54,8 +54,7 @@
         <div id="header-icons">
             <a href="https://wa.me/212665904376" target="_blank" class="item wow pulse"><i
                     class="fa-brands fa-whatsapp"></i></a>
-            <a href="tel:+212665904376" target="_blank" class="item wow pulse"><i
-                    class="fa-solid fa-phone"></i></a>
+            <a href="tel:+212665904376" target="_blank" class="item wow pulse"><i class="fa-solid fa-phone"></i></a>
             <a href="mailto:egyprint.client@gmail.com" target="_blank" class="item wow pulse"><i
                     class="fa-solid fa-envelope"></i></a>
 
@@ -78,23 +77,39 @@
         <h1 id="aboutus" class="text-3xl text-center title ">About Us</h1>
         <div data-sal="slide-up" data-sal-duration="800" data-sal-delay="100" data-sal-easing="ease-out-cubic"
             id="about-container">
-            <div id="about-logo"><img src="media/logo.png" alt="logo"></div>
-            <div id="about-content">
-                <h1 data-wow-duration="2s" data-wow-duration="1s" class="wow fadeInUp text-3xl text-center name ">Egy
-                    print</h1>
-                <h2 class="content"><span>Egy Print</span> is your trusted partner in <span>high-quality digital
-                        printing </span>solutions. We specialize in
-                    delivering precision and creativity across every project — from <span>business cards</span> and
-                    brochures to
-                    <span>banners</span> and <span>large-format </span>prints.
-
-                    With a commitment to reliability, <span>quality</span>, and affordability, we help businesses and
-                    individuals
-                    bring their <span>ideas</span> to life through print. At Egy Print, your vision becomes a reality —
-                    beautifully,
-                    <span>professionally</span>, and <span>on time.</span>
-                </h2>
+            <div class="top">
+                <div id="about-content">
+                    <h2 class="content">
+                        <span>Egy print</span>
+                        is your trusted partner in high-quality digital printing solutions. We specialize in
+                        delivering precision and creativity across every project — from business cards and brochures to
+                        banners and large-format prints. With a commitment to reliability, quality, and affordability,
+                        we help businesses and individuals bring their ideas to life through print. At Egy Print, your
+                        vision becomes a reality — beautifully, professionally, and on time.
+                    </h2>
+                </div>
+                <div id="about-photo">
+                    <img src="media/logo.png" alt="Team">
+                </div>
             </div>
+
+            <div class="bottom">
+                <div class="stat">
+                    <div class="value">20,123</div>
+                    <div class="label">Number Of Transactions</div>
+                </div>
+                <div class="stat">
+                    <div class="value">1,400</div>
+                    <div class="label">Established Year</div>
+                </div>
+                <div class="stat">
+                    <div class="value">13,560</div>
+                    <div class="label">Number Of Users</div>
+                </div>
+            </div>
+
+
+        </div>
         </div>
     </section>
 
@@ -126,7 +141,7 @@
                 </div>
             </div>
 
-          
+
             <div class="card wow slideInRight">
                 <div class="img-wrapper">
                     <img src="media/marketing-materials.png" alt="">
@@ -209,7 +224,7 @@
 <script src="sal-js/sal.js"></script>
 <script>
     sal({
-        threshold: 0.5,
+        threshold: 0.2,
         once: false,
         easing: 'ease-out-cubic',
     });

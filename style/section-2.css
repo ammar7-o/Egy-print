@@ -1,3 +1,4 @@
+/* === Section Container === */
 #section-2 {
     width: 100%;
     height: 100vh;
@@ -8,67 +9,134 @@
     background-color: #202020;
 }
 
+/* === Main About Box === */
 #about-container {
     width: 90%;
-    height: 80vh;
+    min-height: 80vh;
     display: flex;
-    background-color: rgb(36, 36, 36);
+    flex-direction: column;
+    background-color: #242424;
     border-radius: 30px;
     overflow: hidden;
     border: 3px solid white;
     box-shadow: 2px 2px 20px white;
-     animation: shadowPulse 10s infinite ease-in-out;
+    animation: shadowPulse 10s infinite ease-in-out;
+    padding: 20px;
 }
 
+/* === Section Title === */
 #section-2 .title {
     margin: 10px;
     margin-bottom: 20px;
     position: relative;
     color: white;
-
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
 }
 
 #section-2 .title::before {
     content: "";
     position: absolute;
     top: 100%;
-    transform-origin: center;
     width: 100%;
     height: 5px;
     background-image: linear-gradient(to right, blue, red, yellow);
-
     transition: width 0.3s ease;
-
 }
 
-#about-logo {
-    width: 30%;
+/* === Top Section (Content + Image) === */
+#about-container .top {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 60%;
+    padding: 30px;
+    color: white;
+}
+
+/* === Image Right === */
+#about-photo {
+    width: 45%;
     height: 100%;
-    background-color: rgb(80, 80, 80);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#about-photo img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+/* === Text Left === */
+#about-content {
+    width: 55%;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+
+#about-content .content {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+#about-content .content span {
+    color: #00aaff;
+    font-weight: 500;
+}
+
+/* === Animated Span Highlight === */
+#about-content .content span {
+    background-image: linear-gradient(to right,
+            rgb(0, 0, 204),
+            rgb(207, 0, 0),
+            rgb(212, 212, 0));
+    background-size: 300% 100%;
+    background-position: 0% 0%;
+    border-radius: 5px;
+    padding: 2px;
+    margin: 2px;
+    animation: apa 7s infinite ease-in-out;
+    color: white;
+}
+
+/* === Bottom Stats Section === */
+#about-container .bottom {
+    display: flex;
+    height: 40%;
+    justify-content: space-around;
     align-items: center;
-    border-radius: 15px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
-   
+    background: #1a1a1a;
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
+    padding: 20px 0;
 }
 
-@keyframes shadowPulse {
-    0% {
-        box-shadow: 0 8px 16px rgba(0, 217, 255, 0.856);
-    }
-    50% {
-        box-shadow: 0 12px 24px rgba(255, 17, 17, 0.822);
-    }
-    100% {
-        box-shadow: 0 8px 16px rgba(122, 241, 10, 0.856);
-    }
+.stat {
+    text-align: center;
+    color: white;
 }
 
+.stat .value {
+    font-size: 2rem;
+    color: gold;
+    font-weight: bold;
+}
 
+.stat .label {
+    font-size: 1rem;
+    margin-top: 8px;
+    color: #ccc;
+}
+
+/* === Logo Hover Animation (if used) === */
 #about-logo:hover {
     transform: scale(1.05);
     box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3);
@@ -85,77 +153,89 @@
     transform: rotate(2deg) scale(1.02);
 }
 
-#about-content {
-    width: 70%;
-    
-}
-#about-content .name{
-    margin: 10px;
-    color: white;
-font-size: 40px;
-   
-}
-#about-content .content{
-    margin: 10px;
-    color: white;
-    padding: 5px;
-    font-size: 30px;
-   
-}
-#about-content .content span {
-    background-image: linear-gradient(
-        to right, 
-        rgb(0, 0, 204), 
-        rgb(207, 0, 0), 
-        rgb(212, 212, 0)
-    );
-    background-size: 300% 100%;
-    background-position: 0% 0%;
-    border-radius: 5px;
-    padding: 2px;
-    margin: 2px;
-    animation: apa 7s infinite ease-in-out;
-    color: white; /* optional: for better text contrast */
-}
-
+/* === Gradient Animation === */
 @keyframes apa {
     0% {
         background-position: 0% 0%;
     }
+
     50% {
         background-position: 100% 0%;
     }
+
     100% {
         background-position: 0% 0%;
     }
 }
-/* ✅ Responsive tweaks */
+
+/* === Box Shadow Animation === */
+@keyframes shadowPulse {
+    0% {
+        box-shadow: 0 8px 16px rgba(0, 217, 255, 0.856);
+    }
+
+    50% {
+        box-shadow: 0 12px 24px rgba(255, 17, 17, 0.822);
+    }
+
+    100% {
+        box-shadow: 0 8px 16px rgba(122, 241, 10, 0.856);
+    }
+}
+
+/* === Responsive Design === */
 @media (max-width: 768px) {
+    #section-2 {
+        height: 120vh;
+    }
+
     #about-container {
         flex-direction: column;
         align-items: center;
-        height: 90vh;
+        height: 110vh;
+        padding: 2px;
+        overflow-y: scroll;
     }
 
-    #about-logo {
-        width: 100%;
-        max-width: 400px;
-        height: 300px;
+    #about-container .top {
+        flex-direction: column;
+        padding: 10px;
+        height: auto;
     }
-     #about-logo img{
-        width: 150px;
-     }
 
+    #about-photo,
     #about-content {
         width: 100%;
-        text-align: center;
     }
 
-    #about-content .name {
-        font-size: 2rem;
+    #about-photo {
+
+        width: 100%;
     }
+
+    #about-photo img {
+        display: none;
+    }
+
+
 
     #about-content .content {
         font-size: 1rem;
+        text-align: center;
     }
+
+    #about-container .bottom {
+        flex-direction: column;
+        height: auto;
+        padding: 20px 10px;
+
+    }
+
+
+    #about-container .bottom .stat {
+
+        padding: 5px;
+        margin-bottom: 5px;
+    }
+
 }
