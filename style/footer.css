@@ -1,0 +1,117 @@
+ footer {
+     background-image: linear-gradient(to right, rgb(0, 0, 97), rgb(117, 0, 0));
+     color: #ffffff;
+     /* White text */
+     padding: 40px 20px;
+     display: flex;
+     justify-content: space-around;
+     flex-wrap: wrap;
+     font-size: 15px;
+     position: relative;
+ }
+
+ .footer-section {
+     margin: 20px;
+     min-width: 200px;
+     max-width: 300px;
+ }
+
+ .footer-section h3 {
+     color: #ffffff;
+     font-size: 18px;
+     margin-bottom: 20px;
+     font-weight: bold;
+ }
+
+ 
+
+ .footer-section p {
+     line-height: 1.6;
+     color: #cccccc;
+ }
+
+ .footer-logo {
+     display: flex;
+     align-items: center;
+     margin-bottom: 15px;
+ }
+
+ .footer-logo img {
+     width: 40px;
+     height: 40px;
+     margin-right: 10px;
+ }
+
+ .footer-logo span {
+     font-size: 24px;
+     font-weight: bold;
+     color: #ffffff;
+ }
+
+ .social-icons {
+     margin-top: 20px;
+ }
+
+ .social-icons a {
+     color: #ffffff;
+     margin-right: 15px;
+     font-size: 20px;
+     border: 1px solid #ffffff;
+     border-radius: 50%;
+     width: 35px;
+     height: 35px;
+     display: inline-flex;
+     justify-content: center;
+     align-items: center;
+     text-decoration: none;
+     transition: background-color 0.3s, color 0.3s;
+ }
+
+ .social-icons a:hover {
+     background-color: #ffffff;
+     color: #0d1a44;
+ }
+
+ .footer-section ul {
+     list-style: none;
+     padding: 0;
+     margin: 0;
+ }
+
+ .footer-section ul li {
+     margin-bottom: 10px;
+ }
+
+ .footer-section ul li a {
+     color: #cccccc;
+     text-decoration: none;
+     transition: color 0.3s;
+ }
+
+ .footer-section ul li a:hover {
+     color: #ffffff;
+ }
+
+ @media (max-width: 768px) {
+     footer {
+         flex-direction: column;
+         align-items: center;
+         text-align: center;
+     }
+
+     .footer-section {
+         margin: 20px 0;
+         min-width: unset;
+         max-width: 90%;
+     }
+
+     .social-icons {
+         margin-top: 20px;
+         display: flex;
+         justify-content: center;
+     }
+
+     .social-icons a {
+         margin: 0 10px;
+     }
+ }

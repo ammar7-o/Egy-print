@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Egy-print</title>
+    <link rel="icon" href="media/logo.png" />
+    <link rel="stylesheet" href="style/index.css" />
+    <link rel="stylesheet" href="hint-css/hint.min.css" />
+    <link rel="stylesheet" href="font-awesome/css/all.min.css" />
+    <link rel="stylesheet" href="animations/animate.css" />
+    <link rel="stylesheet" href="fonts/fonts.css" />
+    <link rel="stylesheet" href="sal-js/sal.css" />
+</head>
+
+<body class="font-alexandria">
+    <header>
+        <a class="header-logo" href="#"><img src="media/logo.png" alt="logo" />Egy print</a>
+        <nav>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#aboutus">À propos</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#Products">Produits</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <select name="lang" id="lang-select">
+            <option value="index.html">English</option>
+            <option selected value="fr.html">Français</option>
+            <option value="ar.html">العربية</option>
+        </select>
+
+        <i id="menu" class="fas fa-bars"></i>
+        <div id="nav-phone">
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#aboutus">À propos</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#Products">Produits</a></li>
+                <li><a href="#contact">Conatct</a></li>
+
+            </ul>
+        </div>
+    </header>
+
+    <section id="section-1">
+        <h3 id="glass"><i class="fa-solid fa-star"></i><span>Services d'impression numérique haut de gamme</span></h3>
+        <span class="wow fadeInUp" data-wow-duration="1s" id="title">Egy print <br> pour des solutions <br>
+            professionnelles
+            <span class="text-green-300">d'impression <br> numérique</span>
+        </span>
+        <style>
+            #title {
+                font-size: 40px;
+            }
+
+            @media (max-width: 700px) {
+
+
+                #title {
+                    font-size: 30px;
+                }
+            }
+        </style>
+        <h3 id="egy-us" class="wow fadeInUp" data-wow-duration="2s">
+            Des cartes de visite aux grandes bannières, nous offrons des solutions d'impression de haute qualité pour
+            faire rayonner votre marque.
+        </h3>
+
+        <div id="header-icons">
+            <a href="https://wa.me/212665904376" target="_blank" class="item wow pulse"><i
+                    class="fa-brands fa-whatsapp"></i></a>
+            <a href="tel:+212665904376" target="_blank" class="item wow pulse"><i class="fa-solid fa-phone"></i></a>
+            <a href="mailto:egyprint.client@gmail.com" target="_blank" class="item wow pulse"><i
+                    class="fa-solid fa-envelope"></i></a>
+        </div>
+        <div id="layer"></div>
+    </section>
+
+    <section id="section-2">
+        <h1 id="aboutus" class="text-3xl text-center title">À propos</h1>
+        <div id="about-container" data-sal="slide-up" data-sal-duration="800" data-sal-delay="100"
+            data-sal-easing="ease-out-cubic">
+            <div class="top">
+                <div id="about-content">
+                    <h2 class="content">
+                        <span>Egy print</span>
+                        est votre partenaire de confiance pour des solutions d'impression numérique de haute qualité.
+                        Nous assurons précision et créativité pour chaque projet — cartes de visite, brochures,
+                        bannières, etc. Fiabilité, qualité et accessibilité sont nos engagements. Donnez vie à vos idées
+                        avec Egy Print.
+                    </h2>
+                </div>
+                <div id="about-photo">
+                    <img src="media/logo.png" alt="Équipe">
+                </div>
+            </div>
+
+            <div class="bottom">
+                <div class="stat">
+                    <div class="value">600+</div>
+                    <div class="label">Clients satisfaits</div>
+                </div>
+                <div class="stat">
+                    <div class="value">1200+</div>
+                    <div class="label">Projets réalisés</div>
+                </div>
+                <div class="stat">
+                    <div class="value">98%</div>
+                    <div class="label">Taux de qualité</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section-3">
+        <h1 id="services" class="text-3xl text-center title">Services</h1>
+        <div id="card-container">
+            <!-- Service 1 -->
+            <div class="card wow slideInLeft">
+                <div class="img-wrapper"><img src="media/business-cards.jpg" alt=""></div>
+                <div class="logo"><i class="fa-solid fa-address-card"></i></div>
+                <div class="content">
+                    <h1>Cartes de visite</h1>
+                    <h2>Des cartes professionnelles pour une première impression mémorable</h2>
+                    <ul>
+                        <li>Papiers de qualité</li>
+                        <li>Designs personnalisés</li>
+                        <li>Production rapide</li>
+                        <li>Tarifs en gros</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="card wow slideInRight">
+                <div class="img-wrapper"><img src="media/marketing-materials.png" alt=""></div>
+                <div class="logo"><i class="fa-regular fa-file-lines"></i></div>
+                <div class="content">
+                    <h1>Supports marketing</h1>
+                    <h2>Flyers, brochures et outils promotionnels efficaces</h2>
+                    <ul>
+                        <li>Designs percutants</li>
+                        <li>Formats variés</li>
+                        <li>Finition brillante ou mate</li>
+                        <li>Livraison rapide</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="card wow slideInLeft">
+                <div class="img-wrapper"><img src="media/large-formt.png" alt=""></div>
+                <div class="logo"><i class="fa-solid fa-flag"></i></div>
+                <div class="content">
+                    <h1>Grand format</h1>
+                    <h2>Bannières, affiches et enseignes à fort impact</h2>
+                    <ul>
+                        <li>Résistants aux intempéries</li>
+                        <li>Formats personnalisés</li>
+                        <li>Haute résolution</li>
+                        <li>Usage intérieur/extérieur</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="card wow slideInRight">
+                <div class="img-wrapper"><img src="media/shirt.jpg" alt=""></div>
+                <div class="logo"><i class="fa-solid fa-shirt"></i></div>
+                <div class="content">
+                    <h1>Vêtements personnalisés</h1>
+                    <h2>T-shirts, sweats et tenues promotionnelles</h2>
+                    <ul>
+                        <li>Tissus de qualité</li>
+                        <li>Sérigraphie</li>
+                        <li>Broderie</li>
+                        <li>Commandes en gros</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section-3-5">
+        <h1 id="Products" class="text-3xl text-center title">Produits</h1>
+        <div class="materials">
+            <h1 class="pro">Bâche</h1>
+            <h1 class="pro">Vinyle</h1>
+            <h1 class="pro">Roll-Up</h1>
+            <h1 class="pro">Flyers</h1>
+            <h1 class="pro">Cartes de visite</h1>
+            <h1 class="pro">Affiches</h1>
+            <h1 class="pro">Autocollants</h1>
+            <h1 class="pro">Textile</h1>
+            <h1 class="pro">Emballage</h1>
+            <h1 class="pro">Étiquettes</h1>
+            <h1 class="pro">Drapeaux</h1>
+            <h1 class="pro">Menus</h1>
+            <h1 class="pro">Certificats</h1>
+            <h1 class="pro">Livres</h1>
+            <h1 class="pro">Et plus...</h1>
+        </div>
+    </section>
+
+    <section id="section-4">
+        <h1 id="contact" class="text-3xl text-center title">Contact</h1>
+        <div class="container">
+             <div class="map">
+                <div class="location">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3236.9970332451267!2d-5.808115724818798!3d35.77544922479351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0c7f57d9107115%3A0x21ceb5c3fe6cae24!2sEgy%20Print!5e0!3m2!1sen!2sma!4v1754309559569!5m2!1sen!2sma"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                
+            </div>
+            <div class="contact">
+                <div class="li"><i class="fa-brands fa-whatsapp"></i>212665904376</div>
+                <div class="li"><i class="fa-solid fa-phone"></i>+212665904376</div>
+                <div class="li"><i class="fa-solid fa-envelope"></i>egyprint.client@gmail.com</div>
+                <div class="li"><i class="fa-solid fa-location-dot"></i>7 Rue El Hariri, Tanger 90000</div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-section">
+            <div class="footer-logo">
+                <img src="media/logo.png" alt="Egy print Logo">
+                <span>EgyPrint</span>
+            </div>
+            <p>Votre partenaire de confiance pour une impression numérique professionnelle. Qualité, rapidité, service
+                exceptionnel — notre promesse pour vous.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-section">
+            <h3>Services</h3>
+            <ul>
+                <li><a href="#">Cartes de visite</a></li>
+                <li><a href="#">Flyers & Brochures</a></li>
+                <li><a href="#">Grand format</a></li>
+                <li><a href="#">Textile</a></li>
+                <li><a href="#">Bannières & enseignes</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Liens rapides</h3>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#aboutus">À propos</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#Products">Produits</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="sal-js/sal.js"></script>
+    <script>
+        sal({ threshold: 0.2, once: false, easing: "ease-out-cubic" });
+    </script>
+    <script>
+        document.getElementById("lang-select").addEventListener("change", function () {
+            const url = this.value;
+            if (url) {
+                window.location.href = url;
+            }
+        });
+    </script>
+    <script src="script.js"></script>
+    <script src="animations/wow.min.js"></script>
+    <script>new WOW().init();</script>
+    <script src="tailwind/tailwind.js"></script>
+</body>
+
+</html>

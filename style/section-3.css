@@ -5,7 +5,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #202020;
+   background-color: #121212;
     padding: 20px;
 }
 
@@ -42,7 +42,7 @@
 #card-container .card {
     width: 46%;
     height: 60vh;
-    background-color: rgb(0, 0, 0);
+    background-color: #1f1f1f;
     margin: 10px;
     border-radius: 20px;
     position: relative;
